@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_flutter/presentation/detailed/detailed_page.dart';
 import 'package:study_flutter/presentation/home/home_page.dart';
 
 void main() {
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const TodoListPage(),
+      // home: const TodoListPage(),
+      home: const DetailedInfoPage(),
     );
   }
 }

@@ -1,5 +1,5 @@
+import 'package:study_flutter/data/entity/todo_item_entity.dart';
 import 'package:study_flutter/data/repository/app_local_data_source.dart';
-import 'package:study_flutter/domain/model/item_model.dart';
 import 'package:study_flutter/domain/repositories/app_repository.dart';
 
 //наслідування з доменного репозиторію і використання різних
@@ -11,7 +11,7 @@ class AppRepositoryImpl implements AppRepository {
   AppRepositoryImpl(this.localDataSource);
 
   @override
-  Future<List<TodoItem>> getTodoList() {
+  Future<List<TodoItemEntity>> getTodoList() {
     return localDataSource.getTodoItemData();
   }
 }
